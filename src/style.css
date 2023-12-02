@@ -24,7 +24,7 @@
 }
 
 body {
-  @apply min-h-screen;
+  @apply min-h-screen bg-oxford_blue text-anti-flash_white;
 }
 
 #app {
