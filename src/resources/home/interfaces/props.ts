@@ -10,6 +10,7 @@ export interface SocialIconProps {
   icon: Icon;
   color?: string;
   size?: string;
+  hover?: string;
 }
 
 export interface SocialLinkProps {

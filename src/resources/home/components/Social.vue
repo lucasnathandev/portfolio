@@ -5,6 +5,13 @@ import { Icon } from '../interfaces/props';
 import SocialLink from './SocialLink.vue';
 
 const iconSize = 'xl'
+const socialLinks: { socialIcon: Icon, url: string, hover?: string }[] = [
+  { socialIcon: Icon.github, url: 'https://github.com/lucasnathandev', hover: '#4078c0' },
+  { socialIcon: Icon.linkedin, url: 'https://www.linkedin.com/in/lucas-nathan-h-silva/', hover: '#0a66c2' },
+  { socialIcon: Icon.instagram, url: 'https://www.instagram.com/lucas.nathan.5682/', hover: "#c13584" },
+  { socialIcon: Icon.twitter, url: 'https://twitter.com/lucasnathandev', hover: '#1da1f2' }
+]
+
 
 
 </script>
@@ -13,11 +20,8 @@ const iconSize = 'xl'
 
 <template>
   <div class="social">
-    <SocialLink :url="'https://github.com/lucasnathandev'" :style="{ icon: Icon.github, size: iconSize }" />
-    <SocialLink :url="'https://www.linkedin.com/in/lucas-nathan-h-silva/'"
-      :style="{ icon: Icon.linkedin, size: iconSize }" />
-    <SocialLink :url="'https://www.instagram.com/lucas.nathan.5682/'" :style="{ icon: Icon.instagram, size: iconSize }" />
-
+    <SocialLink v-for="link in socialLinks" :url="link.url"
+      :style="{ icon: link.socialIcon, size: iconSize, hover: link.hover }" />
   </div>
 </template>
 
