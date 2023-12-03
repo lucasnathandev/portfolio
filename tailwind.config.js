@@ -3,6 +3,18 @@ export default {
   content: ["./index.html", "./src/**/*.{vue,ts,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        "green-blur-pulse": {
+          "0%": { opacity: 0 },
+          "25%": { filter: "drop-shadow(0 0 4px #02B875)" },
+          "45%": { filter: "drop-shadow(0 0 12px #02B875)" },
+          "50%": { opacity: 1 },
+          "100%": { opacity: 0 },
+        },
+      },
+      animation: {
+        "green-blur-pulse": "green-blur-pulse 1.5s ease-in-out infinite",
+      },
       textColor: {
         myrtle_green: {
           DEFAULT: "#4a6c6f",
