@@ -27,6 +27,6 @@ const socialLinks: { socialIcon: Icon, url: string, hover?: string }[] = [
 
 <style scoped>
 .social {
-  @apply gap-3 flex flex-1 items-center bg-myrtle_green-100 justify-around p-3 max-w-[320px];
+  @apply gap-3 flex flex-1 items-center justify-around p-3 max-w-[320px];
 }
 </style>
