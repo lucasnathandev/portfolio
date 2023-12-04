@@ -10,7 +10,7 @@
 
 <style scoped>
 .home-main {
-  @apply flex flex-1 min-h-[320px] items-center justify-around w-full h-full;
+  @apply flex flex-1 items-center justify-around w-full h-full;
   grid-area: "main";
 }
 </style>

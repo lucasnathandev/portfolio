@@ -5,7 +5,7 @@ import Profile from '@/resources/profile/components/Profile.vue';
 
 
 <template>
-  <header class="px-2 w-full home-header">
+  <header class="home-header">
     <h1 class="text-3xl w-full font-bold py-3 text-center text-anti-flash_white">Lucas Nathan Henrique da Silva</h1>
     <Profile />
     <Social />
@@ -14,6 +14,7 @@ import Profile from '@/resources/profile/components/Profile.vue';
 
 <style scoped>
 .home-header {
+  @apply px-2 w-full;
   grid-area: "head"
 }
 </style>

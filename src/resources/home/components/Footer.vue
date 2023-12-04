@@ -8,7 +8,7 @@
 
 <style scoped>
 .home-footer {
-  @apply w-full h-full min-h-[200px];
+  @apply w-full h-full max-h-[200px];
   grid-area: "foot";
 }
 </style>
