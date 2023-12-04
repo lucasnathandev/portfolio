@@ -28,7 +28,11 @@ body {
 }
 
 #app {
-  @apply flex w-full;
+  @apply flex w-full grid grid-flow-col grid-cols-1;
+  grid-template-areas:
+    "head"
+    "main"
+    "foot";
 }
 
 @media (prefers-color-scheme: light) {
