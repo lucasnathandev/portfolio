@@ -14,9 +14,9 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const solid = [faCheckCircle];
+const solid = [faCheckCircle, faEnvelope];
 
 const brands = [faGithub, faLinkedin, faGoogle, faInstagram, faTwitter];
 

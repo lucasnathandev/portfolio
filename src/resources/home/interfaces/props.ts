@@ -1,9 +1,9 @@
 export enum Icon {
-  github = "github",
-  linkedin = "linkedin",
-  instagram = "instagram",
-  google = "google",
-  twitter = "twitter",
+  github = "fab fa-github",
+  linkedin = "fab fa-linkedin",
+  instagram = "fab fa-instagram",
+  google = "fab fa-google",
+  mail = "fas fa-envelope",
 }
 
 export interface SocialIconProps {

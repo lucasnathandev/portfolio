@@ -1,22 +1,18 @@
-
 <script setup lang="ts">
 
-import { Icon } from '../interfaces/props';
-import SocialLink from './SocialLink.vue';
+  import { Icon } from '../interfaces/props';
+  import SocialLink from './SocialLink.vue';
 
-const iconSize = 'xl'
-const socialLinks: { socialIcon: Icon, url: string, hover?: string }[] = [
-  { socialIcon: Icon.github, url: 'https://github.com/lucasnathandev', hover: '#4078c0' },
-  { socialIcon: Icon.linkedin, url: 'https://www.linkedin.com/in/lucas-nathan-h-silva/', hover: '#0a66c2' },
-  { socialIcon: Icon.instagram, url: 'https://www.instagram.com/lucas.nathan.5682/', hover: "#c13584" },
-  { socialIcon: Icon.twitter, url: 'https://twitter.com/lucasnathandev', hover: '#1da1f2' }
-]
-
+  const iconSize = 'xl'
+  const socialLinks: { socialIcon: Icon, url: string, hover?: string }[] = [
+    { socialIcon: Icon.github, url: 'https://github.com/lucasnathandev', hover: '#4078c0' },
+    { socialIcon: Icon.linkedin, url: 'https://www.linkedin.com/in/lucas-nathan-h-silva/', hover: '#0a66c2' },
+    { socialIcon: Icon.instagram, url: 'https://www.instagram.com/lucas.nathan.5682/', hover: "#c13584" },
+    { socialIcon: Icon.mail, url: 'mailto:lucas.develop.prog@gmail.com', hover: '#F02C2C' }
+  ]
 
 
 </script>
-
-
 
 <template>
   <div class="social">
@@ -26,7 +22,7 @@ const socialLinks: { socialIcon: Icon, url: string, hover?: string }[] = [
 </template>
 
 <style scoped>
-.social {
-  @apply gap-3 flex flex-1 items-center bg-myrtle_green-100 justify-around p-3 max-w-[320px];
-}
+  .social {
+    @apply h-full gap-3 flex flex-1 items-center bg-myrtle_green-100 justify-around p-3 max-w-[320px];
+  }
 </style>
